@@ -22,6 +22,8 @@ export const taskSchema = z.object({
     .max(500, {
       message: "La descripción no puede superar los 500 caracteres",
     }),
+  createdAt: z.string(),
+  updatedAt: z.string(),
 });
 
 export const taskFormSchema = taskSchema.pick({

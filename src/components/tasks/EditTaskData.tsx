@@ -20,8 +20,6 @@ export default function EditTaskData() {
     retry: false,
   });
 
-  console.log(data);
-
   if (isLoading) return <div>Cargando...</div>;
 
   if (isError) return <Navigate to={"/404"} />;
